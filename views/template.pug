@@ -1,0 +1,26 @@
+
+doctype html 
+ html 
+    head 
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Luxury Hotel Rooms 
+        link(rel="stylesheet", type="text/css", href="/css/style.css")
+    body 
+        header#header 
+            .headerContent 
+                h2#sitename 
+                    a(href="/") Luxury Hotel Rooms
+                nav#main_menu 
+                     ul 
+                        each link in menu 
+                            li
+                                a(href=link.path) #{link.name}
+
+        main#main 
+            block main-content
+        footer#footer 
+            p &copy; 2023 Luxury Hotel Rooms Copyright
+            p privacy policy | Terms of Use
+
