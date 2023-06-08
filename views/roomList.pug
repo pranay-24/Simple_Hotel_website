@@ -1,0 +1,46 @@
+extends template 
+block stylesheets 
+    link(rel="stylesheet" , type="text/css" , href="/css/roomListCss.css")
+
+block main-content
+
+    h1 Room list
+    nav 
+        ul 
+            each room in rooms
+             li 
+              p Name #{room.name}
+              p Area #{room.area} 
+              p Price #{room.price} 
+              p Amenities 
+              ul  
+                each amenity in room.amenities
+                 li=amenity
+
+
+.container 
+    .item 
+        p.heading 
+        p.area sq.ft.
+        p.roomprice CAD
+        .amenities_class
+            each amenity in room.amenities
+                switch(amenity){
+                    case "TV": img(src="", placeholder="TV")
+                    case "AC": img(src="", placeholder="AC")
+                    case "Beach Facing": img(src="", placeholder="Beach Facing")
+                    case "Buffet": img(src="", placeholder="Buffet")
+                    case "Personal Chef" :  img(src="", placeholder="Personal Chef")
+        }
+
+
+//-     table 
+//-         thead 
+//-             tr 
+//-                 th 
+//-         tbody 
+//- `
+//-              tr  
+//-                td 
+               
+                

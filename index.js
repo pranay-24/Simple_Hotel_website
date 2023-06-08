@@ -2,11 +2,10 @@ const express = require('express')
 require('dotenv').config()
 
 const path = require ('path')
-const { MongoClient, ObjectId } = require("mongodb");
 
-const client = new MongoClient(process.env.MONGO_URL)
 //setup express server
 const app = express()
+const routes = require('./modules/pages/router')
 
 // set up views
 app.set('views',path.join(__dirname,"views"))
@@ -19,7 +18,13 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
+//pages routes
+app.use("/",routes)
+
+//mongodb helper function
+
 
 app.listen(process.env.PORT,()=>{
     console.log(`App listening at port http://localhost:${process.env.PORT}`)
     })
+    
