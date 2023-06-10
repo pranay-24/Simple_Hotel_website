@@ -9,8 +9,8 @@ const db = client.db("testdb");
 return db;
 
 }
-async function connection() {
 
+async function connection() {
     db = client.db("testdb");
     console.log('Connected to MongoDB Atlas');
     return db;
@@ -26,8 +26,8 @@ async function connection() {
 
 async function getAllData(){
 db = await connection();
-var results = db.collection("hotelrooms").find({});
-var resultsArray = results.toArray();
+var results =  db.collection("hotelrooms").find({});
+var resultsArray =await  results.toArray();
 console.log(resultsArray)
 //console.log(results)
 return resultsArray;

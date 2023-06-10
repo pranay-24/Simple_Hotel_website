@@ -7,18 +7,73 @@ html
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Luxury Hotel Rooms 
         link(rel="stylesheet", type="text/css", href="/css/style.css")
+        script(src="https://kit.fontawesome.com/d3998de45c.js")
         block stylesheets
     body 
+       
         header#header 
-            .headerContent 
-                h2#sitename 
-                    a(href="/") Luxury Hotel Rooms
-                
-             
-
+                           
+             nav
+                 h2.sitename 
+                    a(href="/") Luxure Hotel 
+                 ul
+                     li
+                       a(href='/') Home
+                     li
+                       a(href='/about') About
+                     li
+                       a(href='/roomlist') Room List
+                     
+        
         main#main 
             block main-content
-        footer#footer 
-            p &copy; 2023 Luxury Hotel Rooms Copyright
-            p privacy policy | Terms of Use
+        footer 
+         .container 
+          div(class="sec about")
+            p.title About 
+            ul.social
+                li
+                    a(href="") 
+                        i.fa-brands.fa-instagram
+                li
+                    a(href="") 
+                        i.fa-brands.fa-twitter
+                li
+                    a(href="") 
+                        i.fa-brands.fa-youtube
+        
+          div(class="sec quicklinks")
+            p.title Quick Links 
+            ul 
+                li 
+                    a(href="/") Home 
+                li 
+                    a(href="/about") About
+                li 
+                    a(href="/roomlist") Room List
+            
+          div(class="sec quicklinks")
+            p.title Quick Links
+            ul 
+                li 
+                    a(href="") Privacy
+                li 
+                    a(href="") Jobs
+                li 
+                    a(href="") History 
+        
+          div(class="sec contact")
+            p.title Contact 
+            ul 
+                li
+                    a(href="tel:+1-234567890")
+                        i.fa-solid.fa-phone
+                        p +1-234567890
+                
+                li
+                    a(href="mailto:m@email.com")
+                        i.fa-solid.fa-envelope
+                        p Luxurehotel@email.com
+         .copyright-text
+           p  Copyright 2023 Pranay Mangal.All rights reserved
 
