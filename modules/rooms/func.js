@@ -10,6 +10,7 @@ return db;
 
 }
 
+
 async function connection() {
     db = client.db("testdb");
     console.log('Connected to MongoDB Atlas');
