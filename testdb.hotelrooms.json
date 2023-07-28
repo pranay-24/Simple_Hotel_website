@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "6480f637d1fe533f54908d29"
+  },
+  "name": "Deluxe",
+  "price": 80,
+  "roomsize": 100,
+  "amenities": [
+    "TV",
+    "AC"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6480f637d1fe533f54908d2b"
+  },
+  "name": "Suite",
+  "price": 170,
+  "roomsize": 300,
+  "amenities": [
+    "TV",
+    "AC",
+    "Beach Facing",
+    "Sofa",
+    "Personal Chef"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6480f637d1fe533f54908d2a"
+  },
+  "name": "Super Deluxe",
+  "price": 120,
+  "roomsize": 150,
+  "amenities": [
+    "TV",
+    "AC",
+    "Garden Facing",
+    "Buffet"
+  ]
+}]
